@@ -2,12 +2,11 @@
 
 export const TodoItem = (props) => {
 
-    return (
-    <p>
-        {props.todo.title}
-      <input type="text" value={props.todo.title} readOnly/>
+  return (
+    <div className="todo-item">
+      <input type="text" value={props.todo.title} readOnly />
       <button onClick={() => props.onDeleteTodo(props.todo.id)}>delete</button>
-    </p>
+    </div>
   )
 
 }

@@ -1,15 +1,16 @@
-import { useState } from "react";
+import { useState } from "react"
 
 export const AddTodo = (props) => {
+
     const [todoValue, setTodoValue] = useState('')
 
     const submitTodo = () => {
         props.onAddTodo(todoValue)
         setTodoValue('')
-
+        
     }
     return(
-        <div>
+        <div className="add-form">
             <input 
                 placeholder =" write your todo"
                 value={todoValue}
