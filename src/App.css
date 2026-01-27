@@ -40,3 +40,31 @@
 .read-the-docs {
   color: #888;
 }
+
+.todo-item {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 12px;
+  align-items: center;
+  background: #8e8e8e;
+  padding: 8px;
+  border-radius: 8px;
+}
+
+.todo-item input {
+  flex-grow: 1;
+  padding: 8px;
+  border: 1px solid transparent;
+  background: transparent;
+  font-size: 16px;
+  color: #ffffff;
+}
+
+
+.todo-item button:hover {
+  background-color: #d9363e;
+}
+
+.list-container {
+  margin-top: 20px;
+}
