@@ -9,7 +9,7 @@ export const Todo = () => {
 
     const onAddTodo = (newTodoString) => {
         const newTodo = {
-            id: todos.length + 1,
+            id: Date.now(),
             title: newTodoString
         }
         setTodos([...todos, newTodo])
